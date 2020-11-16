@@ -1,4 +1,4 @@
-print ( "ciao" )
+print ( "ciao,questo progamma serve a calcolare la media dei voti." )
 materia  =  input ( 'Dimmi di che materia stiamo parlando?' )
 
 
