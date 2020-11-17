@@ -1,19 +1,17 @@
-print ( "ciao,questo progamma serve a calcolare la media dei voti." )
+materia = input("ciao,di quale materia vuoi che ti calcoli la media dei voti?")
 
-materia  =  input ( "Dimmi di che materia stiamo parlando?" )
-totale  =  0
-nvoti = int(input("quanti voti hai preso ?"))
-
-
-while  True:
-	
-	votocorrente = int(input( "inserisci un voto:"))
-	totale += votocorrente 
-
-	if votocorrente == 0:
+Voti = []
+while True:
+	voto = float(input("inserisci un voto, per stoppare scrivi 11"))
+	if voto == 11:
 		break
+	else:
+		Voti.append(voto)
+        
+totVoti = len(Voti)
+somma = sum(Voti)
+media = somma / totVoti
+print("In", materia, "hai preso", totVoti, "voti, e la media è", media)			
 
 
-
-media  =  totale/nVoti
-print ( 'Fino ad ora in' , materia , 'hai preso' , nVoti , 'voti la cui media è' , media )			
+print("ecco i tuoi voti in",materia,Voti)
